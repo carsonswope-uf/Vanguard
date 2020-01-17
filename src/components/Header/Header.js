@@ -7,15 +7,15 @@ import './header.css';
 const Header = props => (
     <header className="toolbar">
         <nav className="toolbar-navigation">
-            <div></div>
+{/*the logo link contains a bug where the anchor tag lies slightly beneath the logo itself*/}
             <div><Link to="/"><img src={vanlogo} className="toolbar-logo" /></Link></div>
-            <div>
-                <ul>
-                    <li>
-                    <Link to="/Contact">Contact Us</Link>
-                    </li>
-                </ul>
-            </div>
+            <div className="push-right"/>
+                <div className="toolbar-nav-items">
+                    <ul>
+                        <li><Link to="/Contact" >Contact Us</Link></li>
+                        <li><Link to="/Social" >Social Media</Link></li>
+                    </ul>
+                </div>
         </nav>
     </header>
 

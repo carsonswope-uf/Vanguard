@@ -1,9 +1,44 @@
 .toolbar {
     width: 100%;
     height: 100px;
-    background-color: rgb(0, 51, 160);
+    background-color: rgb(0, 24, 77);
+    top: 0;
+    left: 0;
+    position: fixed;
 }
 
 .toolbar-logo {
     height:100px
+}
+
+.toolbar-nav-items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.toolbar-nav-items li{
+    padding: 0 0.5rem;
+}
+
+.toolbar-nav-items a {
+    color: white;
+    text-decoration: none;
+}
+
+.toolbar-nav-items a:hover,
+.toolbar-nav-items a:active {
+    color: orange;
+}
+
+.toolbar-navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.push-right {
+    flex: 1;
 }
