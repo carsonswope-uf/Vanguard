@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import vanlogo from './assets/vanguard.png';
 import Header from "./components/Header/Header";
 import Gallery from "./components/Gallery/Gallery";
 import Landing from "./components/Landing/Landing";
