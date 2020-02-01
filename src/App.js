@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import Gallery from "./components/Gallery/Gallery";
 import Landing from "./components/Landing/Landing";
 import NotFound from "./components/NotFound";
@@ -11,15 +12,12 @@ export default function App() {
   return (
     <Router>
       <Header/>
-      <main style={{marginTop: '110px'}}>
-    <div className="center">
+        <main style={{marginTop: '100px'}}>
+          <div className="container">
+  
+          </div>
+        </main>
       
-      
-      <h1>
-        <Link to='/Gallery'>Gallery</Link>
-      </h1>
-      </div>
-      </main>
       <Switch>
         <Route path="/Gallery">
           <Gallery/>
