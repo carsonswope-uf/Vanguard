@@ -1,12 +1,14 @@
 import React from 'react';
-import vanlogo from './vanguard.png';
+import LandingImage from './LandingImage.png';
+//import {Image, Dimensions, View} from 'react-native';
+
 
 class Landing extends React.Component {
     render () {
         return (
-            <div style={{width: '100%', margin: 'auto'}}>
-                <img src={vanlogo} alt=""/>
+            <div>
                 <h1>Welcome to Sunburst Yacht Charters</h1>
+                <img src={require('./LandingImage.png')} resizeMode = 'contain'/>
             </div>
         )
     };
