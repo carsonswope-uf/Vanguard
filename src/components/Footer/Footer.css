@@ -1,7 +1,6 @@
 .footer {
     position: static;
     left: 0;
-    bottom: 0;
     width: 100%;
     margin-top: -4px;
     background-color: rgb(0, 24, 77);
@@ -31,7 +30,9 @@
 }
 
 .copyright {
-    padding: 5px;
+    padding-top: 25px;
+    padding-left: 25px;
+    line-height: 50px;
+    align-items: center;
     color: white;
-    transform: translateY(37%);
 }
