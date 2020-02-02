@@ -14,10 +14,10 @@ export default function App() {
       <Header/>
         <main style={{marginTop: '100px'}}>
           <div className="container">
-  
+          
           </div>
         </main>
-      
+        
       <Switch>
         <Route path="/Gallery">
           <Gallery/>
@@ -27,7 +27,7 @@ export default function App() {
         </Route>
         <Route component={NotFound}/>
       </Switch>
-    
+      <Footer/>
     </Router>
   );
 }

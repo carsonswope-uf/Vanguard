@@ -2,21 +2,21 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import iglogo from './ig-logo.png';
-import abblogo from './airbnb_logo.png';
+import twitlogo from './twitter-logo.png';
 
 //arrow makes us not need the return after props
 const Footer = props => (
-    <header className="toolbar">
-        <nav className="toolbar-navigation">
-            <div className="push-right"/>
-            <div><Link to="/"><img src={iglogo} className="toolbar-logo" alt=""/></Link></div>
-                <div className="toolbar-nav-items">
-                    <ul>
-                        <li><Link to="/Contact" >Contact Us</Link></li>
-                        <li><Link to="/Social" >Social Media</Link></li>
-                    </ul>
+    <header className="footer">
+        <div className="push-right"/>
+            <nav className="footer-items">
+                <div className="copyright">© Sunburst Yacht Charters 2019   |   All Rights Reserved</div>
+                <div className="logo-container">
+                <a href="https://www.instagram.com/sunburstyachtcharters/"><img src={iglogo} className="logos" alt=""/></a>
+                
+                <a href="https://twitter.com/SunburstYacht"><img src={twitlogo} className="logos" alt=""/></a>
                 </div>
-        </nav>
+            </nav>
+        
     </header>
 
 );
