@@ -8,7 +8,7 @@ const Header = props => (
     <header className="toolbar">
         <nav className="toolbar-navigation">
 {/*the logo link contains a bug where the anchor tag lies slightly beneath the logo itself*/}
-            <div><Link to="/"><img src={vanlogo} className="toolbar-logo" /></Link></div>
+            <div><Link to="/"><img src={vanlogo} className="toolbar-logo" alt=""/></Link></div>
             <div className="push-right"/>
                 <div className="toolbar-nav-items">
                     <ul>

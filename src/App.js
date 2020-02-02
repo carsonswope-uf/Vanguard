@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import vanlogo from './assets/vanguard.png';
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import Gallery from "./components/Gallery/Gallery";
 import Landing from "./components/Landing/Landing";
 import NotFound from "./components/NotFound";
@@ -12,15 +12,12 @@ export default function App() {
   return (
     <Router>
       <Header/>
-      <main style={{marginTop: '110px'}}>
-    <div className="center">
-      
-      
-      <h1>
-        <Link to='/Gallery'>Gallery</Link>
-      </h1>
-      </div>
-      </main>
+        <main style={{marginTop: '100px'}}>
+          <div className="container">
+          
+          </div>
+        </main>
+        
       <Switch>
         <Route path="/Gallery">
           <Gallery/>
@@ -30,7 +27,7 @@ export default function App() {
         </Route>
         <Route component={NotFound}/>
       </Switch>
-    
+      <Footer/>
     </Router>
   );
 }
