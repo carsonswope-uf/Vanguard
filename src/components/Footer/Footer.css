@@ -30,9 +30,8 @@
 }
 
 .copyright {
-    padding-top: 25px;
-    padding-left: 25px;
-    line-height: 50px;
+    display: flex;
     align-items: center;
     color: white;
+    width: auto;
 }

@@ -2,11 +2,15 @@
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
 }
 
 .container {
     text-align: center;
     height: 95%;
+    transition: opacity 0.25 ease-in-out;
 }
 
 .title {
@@ -15,4 +19,23 @@
     position: absolute;
     width: 100%;
     left: 0px;
+}
+
+.button {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  -ms-transform: translate(-50%, -30%);
+  text-align: center;
+}
+
+.container:hover .responsive {
+    opacity: 1;   
+}
+  
+.container:hover .button {
+    opacity: 1;
 }
