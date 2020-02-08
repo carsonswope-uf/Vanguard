@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Gallery from "./components/Gallery/Gallery";
 import Landing from "./components/Landing/Landing";
+import Contact from "./components/Contact/Contact";
 import NotFound from "./components/NotFound";
 import {BrowserRouter as Router, Switch, Route, Link, useParams} from "react-router-dom";
 
@@ -21,6 +22,9 @@ export default function App() {
       <Switch>
         <Route path="/Gallery">
           <Gallery/>
+        </Route>
+        <Route path="/Contact">
+          <Contact/>
         </Route>
         <Route path="/">
           <Landing/>

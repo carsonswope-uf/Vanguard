@@ -12,8 +12,8 @@ const Header = props => (
             <div className="push-right"/>
                 <div className="toolbar-nav-items">
                     <ul>
+                        <li><Link to="/Gallery" >Gallery</Link></li>
                         <li><Link to="/Contact" >Contact Us</Link></li>
-                        <li><Link to="/Social" >Social Media</Link></li>
                     </ul>
                 </div>
         </nav>
