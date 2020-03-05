@@ -60,7 +60,7 @@
 }
 
 .about {
-    font-size: 10vw;
+    font-size: 5vw;
     bottom: 8px;
     position: relative;
     color: white;
@@ -71,24 +71,82 @@
 .aboutcontent {
     color: white;
     text-align: justify;
-    padding-left: 16px;
+    padding-top: 32px;
+    padding-left: 32px;
     float: left;
-    width: 45%;
-    font-size: 2.1vw;
+    width: 47%;
+    font-size: 1.5vw;
     /*vw is used to resize text on window size*/
 }
 
-.aboutimage {
-    width: 45%;
+.aboutcontent2 {
+    color: white;
+    text-align: justify;
+    padding-top: 96px;
+    padding-right: 32px;
     float: right;
-    padding-right: 16px;
-    padding-bottom: 16px;
+    width: 47%;
+    font-size: 1.5vw;
+    /*fix this after changing filler text*/
 }
 
-.aboutimage1 {
-    width: 45%;
+.aboutcontent3 {
+    color: white;
+    text-align: justify;
+    padding-top: 96px;
+    padding-left: 32px;
     float: left;
-    padding-left: 16px;
-    padding-top: 64px;
-    padding-bottom: 16px;
+    width: 47%;
+    font-size: 1.5vw;
+    /*fix this after changing filler text*/
+}
+
+.aboutimage {
+    width: 35%;
+    float: right;
+    padding-right: 32px;
+}
+
+.aboutimage2 {
+    width: 35%;
+    float: left;
+    padding-left: 32px;
+    padding-top: 96px;
+}
+
+.aboutimage3 {
+    width: 35%;
+    float: right;
+    padding-right: 32px;
+    padding-top: 96px;
+    padding-bottom: 32px;
+}
+
+.gallerytext {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #000066;
+    font-size: 3vw;
+    padding-top: 32px;
+}
+.galleryrow {
+    width: 100%;
+    padding-top: 32px;
+    background-color: #000066;
+}
+
+.rowimg {
+    width: 10%;
+    padding-left: 32px;
+}
+
+.morequestions {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #000066;
+    font-size: 3vw;
 }
