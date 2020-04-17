@@ -23,21 +23,15 @@ handleSubmit(submission) {
     alert("Your inquiry has been sent to our team \n\nEmail: " + this.state.email + "\nDescription: " + this.state.description);
     window.location.reload();
 
-    //post events to backend using axios
+    //prevent sending an empty form
     submission.preventDefault();
-    const Submission = {
-        email: this.state.email,
-        description: this.state.description
-    }
-    //NEED TO READ AXIOS DOCUMENTATION WHEN WE GET TO BACKEND lol
-    //axios.post('localhost:3000', Submission)
 }
 
     render () {
         return (
             <div className="container">
                 <h1 className="textcolor">Contact Us</h1>
-                <div class="split left">
+                <div class="left">
                     <div class="centered">
                         <h1 className="textcolor">Melanie Morales</h1>
                             <h2>Operations Manager</h2>
@@ -45,11 +39,11 @@ handleSubmit(submission) {
                     </div>
                 </div>
                     
-                <div class="split right">
+                <div class="right">
                     <div>
                         <form onSubmit={this.handleSubmit}>
 
-                            <label for="email">Email</label>{/*make label appear above input box*/}
+                            <label for="email">Email</label>
                                 <div className="email">
                                     <input id="email" type="text" placeholder="Email" name="email" onChange={this.handleChange} required/>
                                 </div>
