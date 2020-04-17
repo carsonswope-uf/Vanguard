@@ -2,7 +2,10 @@ import React from 'react';
 import './Landing.css';
 import { Link } from 'react-router-dom';
 
+let refreshPage;
+
 class Landing extends React.Component {
+
     render () {
         return (
             <div className="containercontainer">
@@ -35,18 +38,18 @@ class Landing extends React.Component {
                 
             </div>
                     <div className="gallerytext">
-                    We invite you to <Link to="/Gallery" >view our gallery</Link> for more images!
+                    We invite you to <Link to="/Gallery" onClick={refreshPage} style={{color: '#F0F'}}>view our gallery</Link> for more images!
                     </div>
 
                     <div className="galleryrow">
-                        <img className="rowimg" src={require('../assets/cigar1.jpg')}/>
-                        <img className="rowimg" src={require('../assets/cigar2.jpg')}/>
+                        <img className="rowimg" src={require('../assets/bow3.jpg')}/>
+                        <img className="rowimg" src={require('../assets/kitchen1.jpg')}/>
                         <img className="rowimg" src={require('../assets/cigar3.jpg')}/>
                         <img className="rowimg" src={require('../assets/master1.jpg')}/>
                     </div>
 
                     <div className="morequestions">
-                        Have any other inquiries before making a reservation? Please, <Link to="Contact">contact us!</Link>
+                        Have any other inquiries before making a reservation? Please, <Link to="Contact" style={{color: '#F0F'}}>contact us!</Link>
                     </div>
                 </div>
         )

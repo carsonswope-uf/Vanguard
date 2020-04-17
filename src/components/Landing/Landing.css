@@ -21,6 +21,7 @@
     width: 100%;
     left: 0px;
     font-size: 4vw;
+    color: #000;
 }
 
 .button {
@@ -132,21 +133,21 @@
 }
 .galleryrow {
     width: 100%;
-    padding-top: 32px;
+    padding-top: 64px;
     background-color: #000066;
 }
 
 .rowimg {
-    width: 10%;
-    padding-left: 32px;
+    width: 20%;
+    padding-left: 4vw;
 }
 
 .morequestions {
     width: 100%;
     text-align: center;
     color: white;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 64px;
+    padding-bottom: 64px;
     background-color: #000066;
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
