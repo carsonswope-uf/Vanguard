@@ -1,6 +1,7 @@
 import React from 'react';
 import './Booking.css';
 import _ from 'lodash';
+import emailjs from 'emailjs-com';
 
 class Booking extends React.Component {
 
@@ -9,6 +10,7 @@ class Booking extends React.Component {
         this.state = {
         name: '',
         phone: '',
+        email: '',
         startmonth: '',
         startday: '',
         enddate: '',
@@ -25,9 +27,28 @@ handleChange(submission) {
 
 //alerts user that their event has been submitted successfully
 handleSubmit(submission) {
+    let templateId = 'template_Coeqds6S';
+    let formInput = {
+        from_name: this.state.name, 
+        phone: this.state.phone,
+        email: this.state.email,
+        startmonth: this.state.startmonth,
+        startday: this.state.startday,
+        startyear: this.state.startyear,
+        endmonth: this.state.endmonth,
+        endday: this.state.endday,
+        endyear: this.state.endyear,
+        message_html: this.state.description}
+    
+    //send out the form contents via email.js
+    emailjs.send('gmail', templateId, formInput, 'user_qpZXYCKh3LLtJPUQzp5JF');
+
+    
+
     alert(
     "Your reservation has been sent to our team \n\nname: " + this.state.name + 
-    "\nphone: " + this.state.phone + 
+    "\nphone: " + this.state.phone +
+    "\nemail: " + this.state.email + 
     "\nstart month: " + this.state.startmonth +
     "\nstart day: " + this.state.startday +
     "\nstart year: " + this.state.startyear +
@@ -35,21 +56,10 @@ handleSubmit(submission) {
     "\nend day: " + this.state.endday +
     "\nend year: " + this.state.endyear +
     "\ndescription: " + this.state.description);
-    window.location.reload();
 
-    //post events to backend using axios
+    window.location.reload();
     submission.preventDefault();
-    const Submission = {
-        name: this.state.name,
-        phone: this.state.phone,
-        startmonth: this.state.startmonth,
-        startday: this.state.startday,
-        startyear: this.state.startyear,
-        endmonth: this.state.endmonth,
-        endday: this.state.endday,
-        endyear: this.state.endyear
     }
-}
 
     render () {
         return (
@@ -58,21 +68,31 @@ handleSubmit(submission) {
                 <div className="left">
                     <div class="centered">
                         <h2 className="textcolor">Please provide your reservation information</h2>
-                            <h2>We will respond to your submission within 24 hours</h2>
+                            <h3>We will respond to your submission within 24 business hours</h3>
                     </div>
+                    <img src={require('../assets/fly5.jpg')} alt='booking' className="responsive"/>
                 </div>
 
                 <div className="right"><div>
                         <form onSubmit={this.handleSubmit}>
-
-                            <label for="name">Name</label>
-                                <div>
-                                    <input id="name" className="bookinginput" placeholder="Name" name="name" onChange={this.handleChange} required/>
-                                </div>
-                            <label for="phone">Phone Number</label>
-                                <div>
-                                    <input id="phone" className="bookinginput" placeholder="(555) 555-5555" name="phone" onChange={this.handleChange} required/>
-                                </div>
+                            <div className = 'upperleft'>
+                                <label for="name">Name</label>
+                                    <div>
+                                        <input id="name" className="bookinginput" placeholder="Name" name="name" onChange={this.handleChange} required/>
+                                    </div>
+                            </div>
+                            <div className = "uppermid">
+                                <label for="email">Email Address</label>
+                                    <div>
+                                        <input id="email" className="bookinginput" placeholder="example@example.com" name="email" onChange={this.handleChange} required/>
+                                    </div>
+                            </div>
+                            <div className = "upperright">
+                                <label for="phone">Phone Number</label>
+                                    <div>
+                                        <input id="phone" className="bookinginput" placeholder="(555) 555-5555" name="phone" onChange={this.handleChange} required/>
+                                    </div>
+                            </div>
                             <label for="startdate">Starting date</label>
                                 <div className="startdate">
                                     <select className="dateselect" id="startmonth" name="startmonth" onChange={this.handleChange} required>
@@ -133,6 +153,12 @@ handleSubmit(submission) {
                         </form>
                     </div>
                 </div>
+                <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+                </script>
+                <script type="text/javascript">
+                    {emailjs.init("user_qpZXYCKh3LLtJPUQzp5JF")}
+                </script>
             </div>
     )};
 }

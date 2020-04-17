@@ -1,7 +1,7 @@
 .dateselect {
     width: 25%;
     padding: 1vw;
-    margin: 0.65vw;
+    margin: 2vw;
 }
 
 .dayselect {
@@ -10,12 +10,27 @@
     margin: 1vw;
 }
 
+.upperleft {
+    float: left;
+    width: 33%;
+}
+
+.upperright {
+    float: right;
+    width: 33%
+}
+
+.uppermid {
+    display: inline-block;
+    width: 34%;
+}
+
 .bookinginput {
-    padding: 12px; /* Some padding */
+    padding: 0.5vw;
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 75%;
+    
     overflow-wrap: break-word; /*Make text wrap and go down instead of continuing horizontally*/
     word-wrap: break-word;
     hyphens: auto;
