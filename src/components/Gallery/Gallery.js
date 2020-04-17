@@ -1,8 +1,10 @@
 import React from 'react';
-import vanguard from '../assets/vanguard.png'
 import './Gallery.css';
 
+let i=0;
+
 class Gallery extends React.Component {
+    
     render () {
         return (
             <div className="gallerycontainer">
@@ -40,7 +42,7 @@ class Gallery extends React.Component {
                         <a target="logo" href={require('../assets/dock1.jpg')}>
                             <img src={require('../assets/dock1.jpg')} alt="logo" className="galleryimage"/>
                         </a>
-                        <div className="description">The Vanguard in its natural habitat</div>
+                        <div className="description">The Vanguard at its docking location</div>
                     </div>
                 </div>
                 
@@ -67,7 +69,7 @@ class Gallery extends React.Component {
                         <a target="logo" href={require('../assets/cigar4.jpg')}>
                             <img src={require('../assets/cigar4.jpg')} alt="logo" className="galleryimage"/>
                         </a>
-                        <div className="description">Right next to AmSo</div>
+                        <div className="description">Located right next to American Social</div>
                     </div>
                 </div>
 
@@ -76,7 +78,7 @@ class Gallery extends React.Component {
                         <a target="logo" href={require('../assets/cigar2.jpg')}>
                             <img src={require('../assets/cigar2.jpg')} alt="logo" className="galleryimage"/>
                         </a>
-                        <div className="description">Mmmmmm food</div>
+                        <div className="description">Out on the water</div>
                     </div>
                 </div>
 
@@ -85,7 +87,7 @@ class Gallery extends React.Component {
                         <a target="logo" href={require('../assets/cigar3.jpg')}>
                             <img src={require('../assets/cigar3.jpg')} alt="logo" className="galleryimage"/>
                         </a>
-                        <div className="description">Other angle of food mmm</div>
+                        <div className="description">This could be your view!</div>
                     </div>
                 </div>
 
@@ -132,7 +134,7 @@ class Gallery extends React.Component {
                         <a target="logo" href={require('../assets/fly5.jpg')}>
                             <img src={require('../assets/fly5.jpg')} alt="logo" className="galleryimage"/>
                         </a>
-                        <div className="description">Lemme drive da boat</div>
+                        <div className="description">Drive the boat! (Just kidding, captains only)</div>
                     </div>
                 </div>
 
@@ -141,7 +143,7 @@ class Gallery extends React.Component {
                         <a target="logo" href={require('../assets/bow1.jpg')}>
                             <img src={require('../assets/bow1.jpg')} alt="logo" className="galleryimage"/>
                         </a>
-                        <div className="description">Take a bow</div>
+                        <div className="description">View of the bow</div>
                     </div>
                 </div>
 
@@ -150,7 +152,7 @@ class Gallery extends React.Component {
                         <a target="logo" href={require('../assets/bow2.jpg')}>
                             <img src={require('../assets/bow2.jpg')} alt="logo" className="galleryimage"/>
                         </a>
-                        <div className="description">Girls only now</div>
+                        <div className="description">This could be you!</div>
                     </div><div className="bug">.</div>
                 </div>
 
@@ -159,7 +161,7 @@ class Gallery extends React.Component {
                         <a target="logo" href={require('../assets/bow3.jpg')}>
                             <img src={require('../assets/bow3.jpg')} alt="logo" className="galleryimage"/>
                         </a>
-                        <div className="description">What a view</div>
+                        <div className="description">Great view from the dock</div>
                     </div><div className="bug">.</div>
                 </div>
 
@@ -168,7 +170,7 @@ class Gallery extends React.Component {
                         <a target="logo" href={require('../assets/living1.jpg')}>
                             <img src={require('../assets/living1.jpg')} alt="logo" className="galleryimage"/>
                         </a>
-                        <div className="description">Comfortable inside area!</div>
+                        <div className="description">Comfortable inside area</div>
                     </div><div className="bug">.</div>
                 </div>
 
@@ -177,7 +179,7 @@ class Gallery extends React.Component {
                         <a target="logo" href={require('../assets/kitchen1.jpg')}>
                             <img src={require('../assets/kitchen1.jpg')} alt="logo" className="galleryimage"/>
                         </a>
-                        <div className="description">The sink is to the right</div>
+                        <div className="description">Kitchen, the sink is to the right</div>
                     </div>
                 </div>
 
